@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+        <title>TVMAR Internet</title>
+	<link rel="icon" href="images/icono.png">
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="internet banda ancha en mariquita falan y venadillo. TVMAR internet rural y urbano">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/camera.css">
+    <link rel="stylesheet" href="css/owl-carousel.css">
+    <link rel="stylesheet" href="css/planes.css">
+    <link rel="stylesheet" href="css/tvmar-usuarios.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script><!--[if lt IE 9]>
+    <html class="lt-ie9">
+      <div style="clear: both; text-align:center; position: relative;"><a href="http://windows.microsoft.com/en-US/internet-explorer/.."><img src="images/ie8-panel/warning_bar_0000_u     *      * s.jpg" border="0" height="42" width="820" alt     * ="You a     * re using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    </html>
+    <script src="js/html5shiv.js"></script><![endif]-->
+    <script src="js/device.min.js"></script>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v14.0" nonce="ts5uYnUY"></script>
+    <script>
+
+    var imagenes=new Array(
+
+        ['images/page-1_slide01.jpg'],
+
+        ['images/page-1_slide02.jpg'],
+
+        ['images/page-1_slide03.jpg']
+
+    );
+
+ 
+    function rotarImagenes()
+
+    {
+
+        var index=Math.floor((Math.random()*imagenes.length));
+
+ 
+
+        // cambiamos la imagen y la url
+
+        document.getElementById("imagen").src=imagenes[index][0];
+
+    }
+
+ 
+
+    /**
+
+     * Función que se ejecuta una vez cargada la página
+
+     */
+
+    onload=function()
+
+    {
+
+        // Cargamos una imagen aleatoria
+
+        rotarImagenes();
+
+ 
+
+        // Indicamos que cada 5 segundos cambie la imagen
+
+        setInterval(rotarImagenes,5000);
+
+    }
+
+</script>
+  </head>
+  <body>
+       <div class="container-btn-mode">
+            <div id="id-sun-responsive" class="btn-mode sun active">
+                 <i class="fas fa-sun"></i>
+             </div>
+            <div id="id-moon-responsive" class="btn-mode moon">
+                  <i class="fas fa-moon"></i>
+             </div>
+        </div>
+    <div id= "page" class="page">
+      <!--
+      ========================================================
+      							HEADER
+      ========================================================
+      
+      
+      -->
+      
+      <header>
+        
+        <div class="container">
+          <div class="brand">
+            <h1 class="brand_name"><a href="./">TVMAR INTERNET</a></h1>
+            <p class="brand_slogan"> </p>
+          </div>
+          <a href="callto:#" class="fa-phone">3208345595</a>
+          <p class="respondiendo">Uno de nuestros representantes estará feliz de atenderlo, para casos urgentes llámenos</p>
+        </div>
+        
+        <div id="stuck_container" class="stuck_container">
+          <div class="container">
+            <nav class="nav">
+                <ul data-type="navbar" class="sf-menu" id="menudo">
+                    <li class="active">
+                        <a href="./">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="https://www.tvmarinternet.com/planes">Planes</a>
+                    </li>
+                    <li>
+                        <a href="https://www.tvmarinternet.com/nosotros">Acerca de Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="https://www.tvmarinternet.com/clientes">Clientes</a>
+                    </li>
+                    <li>
+                        <a href="https://www.tvmarinternet.com/preguntas">Preguntas Frecuentes</a>
+                    </li>
+                    <li>
+                        <a href="https://www.tvmarinternet.com/informacion-usuarios">Información para usuarios</a>
+                    </li>
+                    <li>
+                        <a href="https://www.tvmarinternet.com/contacto">Contáctenos</a>
+                    </li>
+                    <li>
+                        <a href="https://amelia.colombiahosting.com.co:2096/webmaillogout.cgi">Correo</a>
+                    </li>
+                                        <li>
+                        <a href="http://192.168.66.253/tvmar/">Cufre*</a>
+                    </li>
+                    <li class="esconderse">
+                        <div title="Modo Dia" id="id-sun" class="btn-mode sun activebtn">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                    </li>
+                    <li class="esconderse">
+                        <div title="Modo Nocturno" id="id-moon" class="btn-mode moon">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                    </li>
+
+                </ul>
+            </nav>
+          </div>
+          
+        </div>
+      </header>
+       <!-- Este es el ensayo para los popups de planes -->              
+       
+<div class="overlay" id="overlay" style="display:none;"></div>
+
+<!-- Aqui termina el ensayo--> 
+      <!--
+      ========================================================
+                                  CONTENT
+      ========================================================
+      -->
+      <main>
+        <section class="camera_container">
+       <a href="https://www.tvmarinternet.com/herramientas" id="link"><img src="images/vacio.jpg" id="imagen" width="90%" class="ubicacion" alt="TVMAR Internet Mariquita" ></a></section>
+        <section>
+          <div class="container banner_wr">
+            <ul class="banner">
+              <li>
+                <div class="fa-globe"></div>
+                <h3>Excelente Disponibilidad</h3>
+                <p class="respondiendo">Disfrute de navegación sin preocuparse por constantes caídas del servicio que puedan interrumpir sus negocios, estudio o entretenimiento</p>
+              </li>
+              <li>
+                <div class="fa-lightbulb-o"></div>
+                <h3>Soporte Técnico</h3>
+                <p class="respondiendo">Brindamos atención permanente para que los problemas técnicos que se presenten sean resueltos a la mayor brevedad posible</p>
+              </li>
+              <li>
+                <div class="fa-cog"></div>
+                <h3>Amplia Cobertura</h3>
+                <p class="respondiendo">Ampliamos permanentemente nuestra red para que todas las personas de áreas rurales y urbanas tengan la posibilidad de acceder al servicio</p>
+              </li>
+              <li>
+                <div class="fa-briefcase"></div>
+                <h3>Empresa Especializada</h3>
+                <p class="respondiendo">Nos enfocamos únicamente en prestar el servicio de Internet, de esta forma garantizamos a nuestros clientes una atención completa a sus necesidades</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="tvmar-info-band tvmar-home-info">
+          <div class="container">
+            <div class="tvmar-info-panel">
+              <h2>Información para usuarios</h2>
+              <p>Consulta las herramientas y documentos que debes conocer como usuario de TVMAR Internet: medidor de velocidad, PQRS, mantenimientos, contratos, derechos, tecnologías, seguridad, gestión de tráfico e Internet sano.</p>
+            </div>
+          </div>
+        </section>
+        <section class="well1">
+          <div class="container">
+            <div class="tvmar-card-grid">
+              <a class="tvmar-user-card" href="medidor-velocidad">
+                <span class="tvmar-user-card__icon"><i class="fa-dashboard"></i></span>
+                <span><h3>Medidor de velocidad</h3><p>Mide descarga, carga, latencia, IP origen, fecha y hora de la consulta.</p></span>
+                <strong>Consultar <i class="fa-arrow-right"></i></strong>
+              </a>
+              <a class="tvmar-user-card" href="gestion-trafico">
+                <span class="tvmar-user-card__icon"><i class="fa-sitemap"></i></span>
+                <span><h3>Gestión de tráfico</h3><p>Medidas razonables para proteger la seguridad, integridad y estabilidad de la red.</p></span>
+                <strong>Consultar <i class="fa-arrow-right"></i></strong>
+              </a>
+              <a class="tvmar-user-card" href="pqrs">
+                <span class="tvmar-user-card__icon"><i class="fa-list-alt"></i></span>
+                <span><h3>Radicar PQRS</h3><p>Presenta peticiones, quejas, reclamos, recursos o sugerencias con número de radicado.</p></span>
+                <strong>Radicar <i class="fa-arrow-right"></i></strong>
+              </a>
+              <a class="tvmar-user-card" href="mantenimientos-programados">
+                <span class="tvmar-user-card__icon"><i class="fa-wrench"></i></span>
+                <span><h3>Mantenimientos programados</h3><p>Revisa avisos de intervenciones programadas y ventanas de mantenimiento.</p></span>
+                <strong>Consultar <i class="fa-arrow-right"></i></strong>
+              </a>
+              <a class="tvmar-user-card" href="contratos">
+                <span class="tvmar-user-card__icon"><i class="fa-file-text-o"></i></span>
+                <span><h3>Contratos</h3><p>Contrato de prestación del servicio, anexos y condiciones comerciales.</p></span>
+                <strong>Ver documentos <i class="fa-arrow-right"></i></strong>
+              </a>
+              <a class="tvmar-user-card" href="informacion-usuarios">
+                <span class="tvmar-user-card__icon"><i class="fa-folder-open"></i></span>
+                <span><h3>Ver todo</h3><p>Accede al centro completo de información para usuarios y obligaciones MinTIC.</p></span>
+                <strong>Abrir sección <i class="fa-arrow-right"></i></strong>
+              </a>
+            </div>
+          </div>
+        </section>
+       
+        <section class="well1">
+          <div class="container">
+            <div class="row">
+              <div class="grid_4" style="background-color: #d9d9d9;">
+				<div style="width: 100%" class="fb-page" data-href="https://www.facebook.com/intertvmar" data-tabs="timeline" data-small-header="true" data-hide-cover="true" data-show-facepile="true"  data-adapt-container-width="true" data-width="500" data-height="650"><blockquote cite="https://facebook.com/intertvmar" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/intertvmar">TVMAR Internet</a></blockquote></div>
+				</div>
+				<div class="separador"></div>
+              <div class="grid_4">
+                <h2>Acerca de Nosotros</h2><img src="images/page-1_img01.jpg" width="100%" alt="TVMAR Internet Mariquita">
+                <div align="justify"><p>TVMAR INTERNET comenzó innovando con tecnología inalámbrica que permitió llegar a todos los rincones del municipio de Mariquita, con el paso del tiempo esta tecnología se fue adaptando a los municipios vecinos, llegando a tener la mejor cobertura en el área urbana y rural en esta zona del Tolima.
+
+				Gracias a la excelente respuesta de la comunidad se trasladó la tecnología inalámbrica por redes de fibra óptica de alta capacidad, alcanzando velocidades mucho mayores.
+
+				Aunque las raíces de TVMAR la vinculan a la prestación del servicio de televisión comunitaria actualmente nos dedicamos exclusivamente ...
+ 				</p></div><a href="https://www.tvmarinternet.com/nosotros" class="btn">Leer Más</a>
+        
+              </div>
+              <div class="separador"></div>
+              <div class="grid_4">
+                <div class="info-box">
+                  <h2 class="fa-comment">Centro de Ayuda</h2>
+                  <hr>
+                  <h3>Horarios de Atención Personal:</h3>
+                  <dl>
+                    <dt>Lunes a Viernes:</dt>
+                    <dd>8 am -  6 pm</dd>
+                  </dl>
+                  <dl>
+                    <dt>Sábados:</dt>
+                    <dd>8 am - 1 pm</dd>
+                  </dl>
+                  <dl>
+                    <dd><a href="mailto:atencionalcliente@tvmarinternet.com">atencionalcliente@tvmarinternet.com</a></dd>
+                    <dd><a href="mailto:soportetecnico@tvmarinternet.com">soportetecnico@tvmarinternet.com</a></dd>
+                  </dl>
+                  <hr>
+                  <h3>24/7 soporte en línea:</h3>
+                  <dl>
+                    <dt class="ws"><a href="https://api.whatsapp.com/send?phone=573208345595" target="_blank" class="ws"> Whatsapp 3208345595 </a> chatee con nosotros dando click directamente sobre el número </dt>
+                  </dl>
+					<hr>
+				<h3>Quiere realizar un PQR?:</h3>
+                  <dl>
+                    <dt>Escribanos y resolveremos todos sus inconvenientes  </dt>
+					  <dd><a href="mailto:administrativo@tvmarinternet.com">administrativo@tvmarinternet.com</a></dd>
+                  </dl>
+                </div>
+                
+            </div>
+          </div>
+			</div>
+        </section>
+      </main>
+      <!--
+      ========================================================
+                                  FOOTER
+      ========================================================
+      -->
+      <footer>
+        <section class="well3">
+          
+            <ul class="row contact-list">
+              <li>
+                <div class="box">
+                    
+                  <div class="box_aside" onclick="location.href='https://www.tvmarinternet.com/contacto';" style="cursor: pointer;">
+                    <div class="icon2 fa-map-marker"></div>
+                  </div>
+                  <div class="box_cnt__no-flow">
+                    <address>Carrera 4 N° 8-56 Barrio el Carmen Mariquita - Tolima</address>
+                  </div>
+                 
+                  <div class="box_aside" onclick="location.href='mailto:atencionalcliente@tvmarinternet.com';" style="cursor: pointer;">
+                    <div class="icon2 fa-envelope"></div>
+                  </div>
+                  <div class="box_cnt__no-flow"><address>atencionalcliente@tvmarinternet.com</address></div>
+<div class="box_aside" onclick="window.open('https://m.facebook.com/intertvmar','facebook');" style="cursor: pointer;"><div class="icon2 fa-facebook"></div></div>
+<div class="box_aside" onclick="window.open('https://m.twitter.com/tvmarinternet','twitter');" style="cursor: pointer;"><div class="icon2 fa-twitter"></div></div>
+<div class="box_aside" onclick="window.open('https://m.instagram.com/tvmarinternet','instagram');" style="cursor: pointer;"><div class="icon2 fa-instagram"></div></div>
+                </div>
+                
+              </li>
+              
+              
+            </ul>
+      
+              
+        </section>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+    <script> 
+	function dialogo1(){
+		$('#overlay').fadeIn('fast',function(){
+            $('#box').animate({'top':'160px'},300);
+        });
+		$('#box').fadeIn('fast',function(){
+            $('#box').animate({'top':'160px'},300);
+        });
+		}
+		
+		function dialogo2(){
+		$('#overlay2').fadeIn('fast',function(){
+            $('#box2').animate({'top':'160px'},300);
+        });
+		$('#box2').fadeIn('fast',function(){
+            $('#box2').animate({'top':'160px'},300);
+        });
+		}
+		
+		function dialogo3(){
+		$('#overlay3').fadeIn('fast',function(){
+            $('#box3').animate({'top':'160px'},300);
+        });
+		$('#box3').fadeIn('fast',function(){
+            $('#box3').animate({'top':'160px'},300);
+        });
+		}
+		
+		function dialogo4(){
+		$('#overlay4').fadeIn('fast',function(){
+            $('#box4').animate({'top':'160px'},300);
+        });
+		$('#box4').fadeIn('fast',function(){
+            $('#box4').animate({'top':'160px'},300);
+        });
+		}
+		
+		function dialogo5(){
+		$('#overlay5').fadeIn('fast',function(){
+            $('#box5').animate({'top':'160px'},300);
+        });
+		$('#box5').fadeIn('fast',function(){
+            $('#box5').animate({'top':'160px'},300);
+        });
+		}
+		
+		function dialogo6(){
+		$('#overlay6').fadeIn('fast',function(){
+            $('#box6').animate({'top':'160px'},300);
+        });
+		$('#box6').fadeIn('fast',function(){
+            $('#box6').animate({'top':'160px'},300);
+        });
+		}
+		
+		function dialogo7(){
+		$('#overlay7').fadeIn('fast',function(){
+            $('#box7').animate({'top':'160px'},300);
+        });
+		$('#box7').fadeIn('fast',function(){
+            $('#box7').animate({'top':'160px'},300);
+        });
+		}
+		
+	$(function() {
+    	
+    $('#boxclose').click(function(){
+        document.getElementById('overlay').style.display = 'none';
+		document.getElementById('box').style.display = 'none';	
+    });
+	$('#boxclose2').click(function(){
+		document.getElementById('overlay2').style.display = 'none';
+		document.getElementById('box2').style.display = 'none';
+		});
+		$('#boxclose3').click(function(){
+		document.getElementById('overlay3').style.display = 'none';
+		document.getElementById('box3').style.display = 'none';
+		});
+		$('#boxclose4').click(function(){
+		document.getElementById('overlay4').style.display = 'none';
+		document.getElementById('box4').style.display = 'none';
+		});
+		$('#boxclose5').click(function(){
+		document.getElementById('overlay5').style.display = 'none';
+		document.getElementById('box5').style.display = 'none';
+		});
+		$('#boxclose6').click(function(){
+		document.getElementById('overlay6').style.display = 'none';
+		document.getElementById('box6').style.display = 'none';
+		});
+		$('#boxclose7').click(function(){
+		document.getElementById('overlay7').style.display = 'none';
+		document.getElementById('box7').style.display = 'none';
+		});
+}); </script>
+<script src="js/botones.js"></script>
+  </body>
+  
+</html>

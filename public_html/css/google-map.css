@@ -1,0 +1,30 @@
+/*==================  GOOGLE MAP  ======================*/
+.map_model {
+  height: 718px;
+}
+.map_model img {
+  max-width: none !important;
+}
+@media (max-width: 767px) {
+  .map_model {
+    height: 350px;
+  }
+}
+@media (max-width: 479px) {
+  .map_model {
+    height: 300px;
+  }
+}
+.map {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.map iframe {
+    position: absolute;
+    top: 30px;
+    left: 5%;
+    width: 90%;
+    height: 100%;
+}

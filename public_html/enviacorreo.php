@@ -1,0 +1,302 @@
+<script>
+function cerrarse(){
+opener.location.reload();
+setTimeout('self.close()',5000);
+}
+</script>
+<? 
+$nombre=$_POST["nombre"];
+$telefono=$_POST["telefono"];
+$correo=$_POST["correo"];
+$mensajer=$_POST["mensaje"];
+$header = 'From: ' . $correo; 
+$header .= "X-Mailer: PHP/" . phpversion() . " \r\n"; 
+$header .= "Mime-Version: 1.0 \r\n"; 
+$header .= "Content-Type: text/plain"; 
+$mensaje = "Este mensaje fue enviado por " . $nombre . " \r\n"; 
+$mensaje .= "Su e-mail es: " . $correo . " \r\n"; 
+$mensaje .= "telefono es: " . $telefono. " \r\n"; 
+$mensaje .= "mensaje: ". $mensajer; 
+
+$para = "administrativo@tvmarinternet.com"; 
+$asunto = 'Mensaje de la pagina'; 
+
+mail($para, $asunto, utf8_decode($mensaje), $header);
+?>
+<!DOCTYPE html>
+<html> 
+<head>
+<meta name="CUFRE TVMAR" content="width=device-width, initial-scale=1.0">
+	
+	<style type="text/css">
+		
+
+		@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+
+		@media screen and (max-width: 1000px){
+			.login-page .form .titulo h1 {
+	color: #FFBF00;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #EAE2E2;
+  max-width: 90%;
+  padding: 5%;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	margin-left: 2%;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+			.login-page {
+  width: 80%;
+				height: 90%;
+  padding-top: 5%;
+	padding-bottom: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+				margin: 5%;
+}
+			.form input {
+	text-align: center;
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 90%;
+  border: 0;
+  margin: 0 0 5%;
+  padding: 5%;
+  box-sizing: border-box;
+  font-size: 300%;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #ED6206;
+  width: 100%;
+  border: 0;
+  padding: 5%px;
+  color: #FFFFFF;
+  font-size: 300%;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #43A047;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 5% auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+			.img {
+				width: 80%;
+			}
+			
+body {
+  background: #09F;
+  background: -webkit-linear-gradient(right,  #09F, WITHE);
+  background: -moz-linear-gradient(right,  #09F, WITHE);
+  background: -o-linear-gradient(right,  #09F, WITHE);
+  background: linear-gradient(to left,  #09F, WITHE);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+}
+	
+		}
+		
+		
+		
+		
+		@media screen and (min-width: 1001px){
+			.login-page .form .titulo h1 {
+	color: #FFBF00;
+}
+.form {
+  background: #EAE2E2;
+  width: 90%;
+  padding: 5%;
+	margin-left: 50%;
+	margin-right: 50%;
+	margin-top: 15%;
+	margin-buttom: 15%;
+  text-align: center;
+  box-shadow
+	: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+			.img {
+				width: 30%;
+			}
+			
+			.login-page {
+  width: 50%;
+}
+			.form input {
+	text-align: center;
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #ABA7A7;
+  width: 60%;
+  border: 0;
+  margin: 0 0 2%;
+  padding: 2%;
+  box-sizing: border-box;
+  font-size: 90%;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #ED6206;
+  width: 100%;
+  border: 0;
+  padding: 5%px;
+  color: #FFFFFF;
+  font-size: 100%;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: RED;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 5% auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+		}
+		
+body {
+  background:  #09F;
+  background: -webkit-linear-gradient(right,  #808080,#CCC);
+  background: -moz-linear-gradient(right,  #808080, #CCC);
+  background: -o-linear-gradient(right,  #808080, #CCC);
+  background: linear-gradient(to left,  #808080, #CCC);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;   
+	align-content: center;
+	align-items: center;
+}
+	
+		}
+	
+    .login-page .form .titulo h1 {
+	color: #FFBF00;
+	
+}
+    .login-page .form .titulo h1 {
+	font-weight: bold;
+	text-shadow: -1px 1px 0 #000000
+}
+    .login-page .form .adtivo p {
+	font-weight: bold;
+}
+    </style>
+	<meta charset="iso-8859-1">
+</head>
+	<body>
+		<div class="login-page">
+			
+  <div class="form">
+	  <img class="img" src="images/LOGO FINAL.png">
+	  <div class=titulo align="center">
+    	 <h1>Gracias por comunicarte con nosotros</h1>
+		 </div>
+		 <div class="adtivo">
+     	 <p align="center">Hemos recibido tu mensaje y en poco tiempo nos pondremos en contacto para resolver tus inquietudes </p></div>
+    
+  </div>
+</div>
+		
+	 
+</body>
+
+</html>
+<body onLoad="cerrarse()"> 

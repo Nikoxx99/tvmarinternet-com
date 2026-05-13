@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Contáctenos</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/planes.css">
+    <link rel="stylesheet" href="css/mailform.css">
+    <link rel="stylesheet" href="css/google-map.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/device.min.js"></script>
+  </head>
+  <body>
+       <div class="container-btn-mode">
+            <div id="id-sun-responsive" class="btn-mode sun active">
+                 <i class="fas fa-sun"></i>
+             </div>
+            <div id="id-moon-responsive" class="btn-mode moon">
+                  <i class="fas fa-moon"></i>
+             </div>
+        </div>
+      <!-- Messenger Plugin de chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin de chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "209250546277454");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v14.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div id="page" class="page">
+  
+      <header>
+        <div class="container">
+          <div class="brand">
+            <h1 class="brand_name"><a href="./">TVMAR INTERNET</a></h1>
+            <p class="brand_slogan"> </p>
+          </div>
+          <a href="callto:#" class="fa-phone">3208345595</a>
+          <p>Uno de nuestros representantes estará feliz de atenderlo, para casos urgentes llámenos</p>
+        </div>
+        <div id="stuck_container" class="stuck_container">
+          <div class="container">
+            <nav class="nav">
+              <ul data-type="navbar" class="sf-menu">
+                <li><a href="https://www.tvmarinternet.com/">Inicio</a>
+                </li>
+                <li><a href="https://www.tvmarinternet.com/planes">Planes</a>
+                   </li>
+                <li><a href="https://www.tvmarinternet.com/nosotros">Acerca de Nosotros</a>
+                </li>
+                <li><a href="https://www.tvmarinternet.com/clientes">Clientes</a>
+                </li>
+                <li><a href="https://www.tvmarinternet.com/preguntas">Preguntas Frecuentes</a>
+                </li>
+                <li class="active"><a href="#">Contáctenos</a>
+                </li>
+                <li>
+				  <div title="Modo Dia" id="id-sun" class="btn-mode sun activebtn">
+					  <i class="fas fa-sun"></i> </div>
+				  </li>
+					  <li>
+						  <div title="Modo Nocturno" id="id-moon" class="btn-mode moon">
+      <i class="fas fa-moon"></i>
+   </div>
+				  </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+ <!-- Este es el ensayo para los popups de planes -->      
+
+<!-- Aqui termina el ensayo-->  
+      <!--
+      ========================================================
+                                  CONTENT
+      ========================================================
+      -->
+     <main>
+        <section class="map">
+              <iframe iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d993.3554818714844!2d-74.89605497083504!3d5.196178599764343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e40b5ed1c538dc9%3A0x1b796b88b81a18d9!2sTVMAR!5e0!3m2!1sen!2sus!4v1505080691789" width="600" height="450" frameborder="0" allowfullscreen></iframe>
+        </section>
+       
+        <section class="well1">
+          <div class="container">
+            <h2 style="margin-top: 20px;">Formulario de Contacto</h2>
+            <div class="mailform">
+            <form name="form1" method="post" action="enviacorreo.php" target="ventana" onSubmit="window.open('enviacorreo.php', 'ventana','width=700,height=700')">
+              <input type="hidden" name="form-type" value="contact">
+              <fieldset class="row" style="display: block;">
+                <label class="grid_4">
+                  <input type="text" name="nombre"  id="nombre" placeholder="Nombre:" data-constraints="@LettersOnly @NotEmpty" required>
+                </label> 
+                <label class="grid_4">
+                  <input type="number" min="3000000000" max="3999999999" name="telefono" id="telefono" placeholder="Teléfono:" data-constraints="@Phone @NotEmpty" required>
+                </label>
+                <label class="grid_4">
+                  <input type="email" name="correo" id="correo" placeholder="Email:" data-constraints="@Email">
+                </label>
+                <label class="grid_12" style="width: 100%; padding: 1em;">
+                  <textarea name="mensaje" id="mensaje" placeholder="Mensaje:" data-constraints="@NotEmpty" required></textarea>
+                </label>
+                
+                  <button type="submit" class="btn">Enviar Comentario</button>
+                
+              </fieldset>
+            </form>
+            </div>
+          </div>
+       </section>
+      </main>
+      <!--
+      ========================================================
+                                  FOOTER
+      ========================================================
+      -->
+      
+      <!--
+      ========================================================
+                                  FOOTER
+      ========================================================
+      -->
+      <footer>
+        <section class="well3">
+          
+            <ul class="row contact-list">
+              <li>
+                <div class="box">
+                    
+                  <div class="box_aside" onclick="location.href='https://www.tvmarinternet.com/contacto';" style="cursor: pointer;">
+                    <div class="icon2 fa-map-marker"></div>
+                  </div>
+                  <div class="box_cnt__no-flow">
+                    <address>Carrera 4 N° 8-56 Barrio el Carmen Mariquita - Tolima</address>
+                  </div>
+                 
+                  <div class="box_aside" onclick="location.href='mailto:atencionalcliente@tvmarinternet.com';" style="cursor: pointer;">
+                    <div class="icon2 fa-envelope"></div>
+                  </div>
+                  <div class="box_cnt__no-flow"><address>atencionalcliente@tvmarinternet.com</address></div>
+<div class="box_aside" onclick="window.open('https://m.facebook.com/intertvmar','facebook');" style="cursor: pointer;"><div class="icon2 fa-facebook"></div></div>
+<div class="box_aside" onclick="window.open('https://m.twitter.com/tvmarinternet','twitter');" style="cursor: pointer;"><div class="icon2 fa-twitter"></div></div>
+<div class="box_aside" onclick="window.open('https://m.instagram.com/tvmarinternet','instagram');" style="cursor: pointer;"><div class="icon2 fa-instagram"></div></div>
+                </div>
+                
+              </li>
+              
+              
+            </ul>
+      
+              
+        </section>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+    <script> 
+	function dialogo1(){
+		$('#overlay').fadeIn('fast',function(){
+            $('#box').animate({'top':'160px'},300);
+        });
+		$('#box').fadeIn('fast',function(){
+            $('#box').animate({'top':'160px'},300);
+        });
+		}
+		
+		function dialogo2(){
+		$('#overlay2').fadeIn('fast',function(){
+            $('#box2').animate({'top':'160px'},300);
+        });
+		$('#box2').fadeIn('fast',function(){
+            $('#box2').animate({'top':'160px'},300);
+        });
+		}
+		
+		function dialogo3(){
+		$('#overlay3').fadeIn('fast',function(){
+            $('#box3').animate({'top':'160px'},300);
+        });
+		$('#box3').fadeIn('fast',function(){
+            $('#box3').animate({'top':'160px'},300);
+        });
+		}
+		
+		function dialogo4(){
+		$('#overlay4').fadeIn('fast',function(){
+            $('#box4').animate({'top':'160px'},300);
+        });
+		$('#box4').fadeIn('fast',function(){
+            $('#box4').animate({'top':'160px'},300);
+        });
+		}
+		
+		function dialogo5(){
+		$('#overlay5').fadeIn('fast',function(){
+            $('#box5').animate({'top':'160px'},300);
+        });
+		$('#box5').fadeIn('fast',function(){
+            $('#box5').animate({'top':'160px'},300);
+        });
+		}
+		
+		function dialogo6(){
+		$('#overlay6').fadeIn('fast',function(){
+            $('#box6').animate({'top':'160px'},300);
+        });
+		$('#box6').fadeIn('fast',function(){
+            $('#box6').animate({'top':'160px'},300);
+        });
+		}
+		
+		function dialogo7(){
+		$('#overlay7').fadeIn('fast',function(){
+            $('#box7').animate({'top':'160px'},300);
+        });
+		$('#box7').fadeIn('fast',function(){
+            $('#box7').animate({'top':'160px'},300);
+        });
+		}
+		
+	$(function() {
+    	
+    $('#boxclose').click(function(){
+        document.getElementById('overlay').style.display = 'none';
+		document.getElementById('box').style.display = 'none';	
+    });
+	$('#boxclose2').click(function(){
+		document.getElementById('overlay2').style.display = 'none';
+		document.getElementById('box2').style.display = 'none';
+		});
+		$('#boxclose3').click(function(){
+		document.getElementById('overlay3').style.display = 'none';
+		document.getElementById('box3').style.display = 'none';
+		});
+		$('#boxclose4').click(function(){
+		document.getElementById('overlay4').style.display = 'none';
+		document.getElementById('box4').style.display = 'none';
+		});
+		$('#boxclose5').click(function(){
+		document.getElementById('overlay5').style.display = 'none';
+		document.getElementById('box5').style.display = 'none';
+		});
+		$('#boxclose6').click(function(){
+		document.getElementById('overlay6').style.display = 'none';
+		document.getElementById('box6').style.display = 'none';
+		});
+		$('#boxclose7').click(function(){
+		document.getElementById('overlay7').style.display = 'none';
+		document.getElementById('box7').style.display = 'none';
+		});
+}); </script>
+<script src="js/botones.js"></script>
+  </body>
+</html>
